@@ -1,0 +1,99 @@
+@import url(../../public/static/reset.css);
+/* @import url(../../public/static/mediaQuery.css); */
+/* @import url(../../public/static/colorPicker/colorPicker.css); */
+/*@import url(./../../../common/src/lib/colorPicker/colorPicker.css);*/
+
+/**
+ * header
+ */
+
+.header {
+	position: fixed;
+    width: 100%;
+    height: 50px;
+    background: #2a3b45;
+    z-index: 101;
+    color:#fff;
+    min-width: 990px;
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,0.45);
+}
+.header-nav-left {
+	padding-left: 78px;
+	height: 50px;
+	float: left;
+}
+.header-nav-right {
+	height: 50px;
+	float: right;
+	padding-right:30px; 
+}
+.header-nav-left .header-nav-item {
+	float: left;
+	line-height: 50px;
+	padding: 0 20px;
+	font-size: 14px;
+	margin-left: 2px;
+}
+.header-nav-left .header-nav-item i{
+	padding-right: 5px;
+	font-size: 14px;
+	vertical-align: 0%;
+}
+.header-nav-right .header-nav-item i{
+	vertical-align: 0%;
+}
+.header-nav-right .header-nav-item {
+	float: right;
+	line-height: 50px;
+	padding: 0 20px;
+	font-size: 14px;
+	margin-left: 2px;
+}
+.header-nav-left .header-nav-item:hover{
+	background: rgba(68,145,233,0.2);
+}
+.header-nav-updown {
+	color: rgba(255,255,255,.7);
+}
+.header-nav-updown i {
+	font-size: 18px;
+}
+
+@keyframes myrefresh
+{
+0% {transform: rotateZ(0deg)}
+100% {transform: rotateZ(360deg)}
+}
+
+.header-nav-item-refresh:hover {
+	animation: myrefresh 2s linear infinite;
+}
+.header-nav-item-refresh {
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/**
+ * sildbar
+ */
+
+.sildbar {
+	width: 220px;
+    display: block;
+    position: fixed;
+    top: 50px;
+    bottom: 0px;
+    z-index: 102;
+    overflow-x: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: #293A45;
+    box-shadow: 0 0 12px 0 rgba(0,0,0,0.27);
+    color: #fff;
+}
