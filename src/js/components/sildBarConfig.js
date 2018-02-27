@@ -5,7 +5,7 @@ export default class sildBarConfig  {
 		topNavName: "系统设置",
 		childerList: [{
 			sildBarName: "系统配置",
-			show: false,
+			show: true,
 			sildBarId: 0,
 			sildBarChilder: [{
 				secondId: 0,

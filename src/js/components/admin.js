@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import Header from './header';
 import Sildbar from './sildbar';
 import Container from './container';
+import Footer from './footer';
 
 class Admin extends Component {
 	constructor(props) {
@@ -30,6 +31,7 @@ class Admin extends Component {
 					<Header navBarCallBack={this.changeNavBarChilder.bind(this)}/>
 		        	<Sildbar sildbarId = {this.state.sildbarId}/>
 		        	<Container/>
+		        	<Footer/>
 				</div>
 	}
 }
