@@ -12,20 +12,20 @@ import Loading from './components/Loading';
 import Admin from './components/admin';
 
 
-const AsyncHome = Loadable({
-  loader: () => import("./components/Home"),
-  loading: Loading
-});
+// const AsyncHome = Loadable({
+//   loader: () => import("./components/Home"),
+//   loading: Loading
+// });
 
-const AsyncTiming = Loadable({
-  loader: () => import("./components/Timing"),
-  loading: Loading
-});
+// const AsyncTiming = Loadable({
+//   loader: () => import("./components/Timing"),
+//   loading: Loading
+// });
 
-const AsyncList = Loadable({
-  loader: () => import("./components/List"),
-  loading: Loading
-});
+// const AsyncList = Loadable({
+//   loader: () => import("./components/List"),
+//   loading: Loading
+// });
 
 // import {Lamp} from './Lamp';
 // import {Reseting} from './Reseting';
