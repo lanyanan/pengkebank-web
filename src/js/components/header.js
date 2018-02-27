@@ -38,7 +38,7 @@ class Header extends Component {
 						</div>
 					</div>
 					<div className="header-nav-right">
-						<div className="header-nav-item header-nav-updown" onMouseOver={this.showUpDown.bind(this)}>
+						<div className="header-nav-item header-nav-updown" onMouseMove={this.showUpDown.bind(this)} onMouseOver={this.showUpDown.bind(this)}>
 							<span>admin</span>
 							<i style={{display:!(this.state.showUpDown)?"inline-block":"none"}} className="fa fa-caret-down fa-lg"></i>
 							<i style={{display:this.state.showUpDown?"inline-block":"none"}} className="fa fa-caret-up fa-lg"></i>
