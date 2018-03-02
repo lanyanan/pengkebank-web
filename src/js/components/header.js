@@ -60,10 +60,20 @@ class Header extends Component {
 						})}
 					</div>
 					<div className="header-nav-right">
+<<<<<<< HEAD
+						<div className="header-nav-item header-nav-updown" onMouseMove={this.showUpDown.bind(this)} onMouseOver={this.showUpDown.bind(this)}>
+							<span>admin</span>
+							<i style={{display:!(this.state.showUpDown)?"inline-block":"none"}} className="fa fa-caret-down fa-lg"></i>
+							<i style={{display:this.state.showUpDown?"inline-block":"none"}} className="fa fa-caret-up fa-lg"></i>
+						</div>
+						<div className="header-nav-item header-nav-item-refresh">
+							<i className="fa fa-refresh fa-lg"></i>
+=======
 						<div data-key="1" className="header-nav-item" onClick={this.showNavBarChilder.bind(this)}>
 							<span className="login">登录</span>
 							<span style={{fontSize:"16px"}}>|</span>
 							<span className="sign">注册</span>
+>>>>>>> 9d601ad1f2fd474b28b13852f416c60c567990d6
 						</div>
 					</div>
 				</div>
