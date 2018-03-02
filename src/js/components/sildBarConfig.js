@@ -9,50 +9,49 @@ export default class sildBarConfig  {
 			sildBarId: 0,
 			sildBarChilder: [{
 				secondId: 0,
-				secondSildBarName: "1"
+				secondName: "main",
+				secondSildBarName: "后台首页"
 			}, {
 				secondId: 1,
-				secondSildBarName: "1"
+				secondName: "config",
+				secondSildBarName: "网站参数"
 			}, {
 				secondId: 2,
-				secondSildBarName: "1"
-			}, {
-				secondId: 3,
-				secondSildBarName: "1"
+				secondName: "area",
+				secondSildBarName: "地区信息"
 			}]
 		}, {
-			sildBarName: "系统配置",
+			sildBarName: "组织架构",
 			id: 1,
 			show: false,
 			sildBarChilder: [{
-				secondId: 4,
-				secondSildBarName: "1"
+				secondId: 3,
+				secondName: "organizationlist",
+				secondSildBarName: "组织列表"
 			}, {
 				secondId: 5,
-				secondSildBarName: "1"
+				secondName: "organizationNumber",
+				secondSildBarName: "组织员工"
 			}, {
 				secondId: 6,
-				secondSildBarName: "1"
+				secondSildBarName: "员工岗位"
 			}, {
 				secondId: 7,
-				secondSildBarName: "1"
+				secondSildBarName: "员工分组"
 			}]
 		}, {
-			sildBarName: "系统配置",
+			sildBarName: "系统权限",
 			id: 2,
 			show: false,
 			sildBarChilder: [{
 				secondId: 8,
-				secondSildBarName: "1"
+				secondSildBarName: "系统用户"
 			}, {
 				secondId: 9,
-				secondSildBarName: "1"
+				secondSildBarName: "权限列表"
 			}, {
 				secondId: 10,
-				secondSildBarName: "1"
-			}, {
-				secondId: 11,
-				secondSildBarName: "1"
+				secondSildBarName: "节点管理"
 			}]
 		}]
 	},

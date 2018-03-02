@@ -1,105 +1,60 @@
 import React, {Component} from 'react';
-import {connect} from 'react-redux';
+//import {connect} from 'react-redux';
 import Btn from '../modules/btn';
-import TabNav from '../modules/tabBar';
+// import TabNav from '../modules/tabBar';
 import InputText from '../modules/inputText';
 import Select from '../modules/select';
-import DateTime from '../modules/dateTime';
-import Radio from '../modules/radio';
+// import DateTime from '../modules/dateTime';
+// import Radio from '../modules/radio';
 //import CheckBox from '../modules/checkBox';
 
 
-class Edit extends Component {
+class Area extends Component {
 	constructor(props){
 		super(props);
-		this.state = {
-			showKey:0
-		}
-	}
-	newEdit() {
-		alert(9)
-	}
-	changeTab(index) {
-		this.setState({
-			showKey:index
-		})
-	}
-	submit() {
-		console.log(this.refs.userInput.refs.searchText.value);
-		console.log(this.refs.userSelect.refs.searchSelect.value);
-		//可以遍历多选框
-		console.log(this.refs.userCheckBox.refs.checkBox1.checked);
-		console.log(this.refs.userCheckBox.refs.checkBox1.value);
-
+		
 	}
 	componentDidMount(){
 		// console.log($('.input-user-dateTime input'))
 		// $('.input-user-dateTime input').datetimepicker({format: 'yyyy-mm-dd hh:ii'});
 	}
-	render() {
-		let arr = ["物业资源", "停车项目", "公交项目"];
-		let options = ["1", "2", "3", "4"];
-		let checkBoxOption = [{
-			id:"checkBox1",
-			value:"标签1",
-			style:{
-				width: "20px",
-				height: "20px",
-				margin: "2px 0 0 -20px"
-			}
-		},
-		{
-			id:"checkBox2",
-			value:"标签2",
-			style:{
-				width: "20px",
-				height: "20px",
-				margin: "2px 0 0 -20px"
-			}
-		},
-		{
-			id:"checkBox3",
-			value:"标签3",
-			style:{
-				width: "20px",
-				height: "20px",
-				margin: "2px 0 0 -20px"
-			}
-		}
-		]
-		return  <div className="edit">
-					<div className="container-title">
-						<div className="container-title-name">物业资源-项目</div>	
-						<div className="container-title-btns">
-							<Btn btnClassName="btn btn-user-three" btnTitle="业态" btnCallback={this.newEdit.bind(this)} />
-							<Btn btnClassName="btn btn-user-two" btnTitle="添加" btnCallback={this.newEdit.bind(this)} />
-							<Btn btnClassName="btn btn-user-one" btnTitle="配置" btnCallback={this.newEdit.bind(this)} />
-						</div>	
-					</div>
-					<div className="container-tab">
-						<TabNav btnCallback={this.changeTab.bind(this)} tabArr={arr} showKey={this.state.showKey}/>
-						<div className="container-tab-search">
+	submit() {
 
+	}
+	render() {
+		let options = ["1", "2", "3", "4"];
+		return  <div className="index-area">
+					<div className="container-title">
+						<div className="container-title-name">地区信息</div>
+						<div className="container-title-btns">
+							<Btn btnClassName="btn btn-user-three" btnTitle="添加" />
+						</div>
+					</div>
+					<div className="container-tab index-area-tab">
+						<div className="container-tab-search">
 							<div className="container-tab-search-item">
 								<label>下拉选择框</label>
 								<Select ref="userSelect" domId="searchSelect" optionArr={options}/>
 							</div>
 							<div className="container-tab-search-item">
-								<label>文本输入框</label>
-								<InputText ref="userInput" domId="searchText" />
+								<label>下拉选择框</label>
+								<Select ref="userSelect1" domId="searchSelect" optionArr={options}/>
+							</div>
+						</div>
+						<div className="container-tab-search">
+
+							<div className="container-tab-search-item">
+								<label>下拉选择框</label>
+								<Select ref="userSelect2" domId="searchSelect" optionArr={options}/>
 							</div>
 							<div className="container-tab-search-item">
-								<label>时间选择</label>
-								<DateTime />
-							</div>
-							<div className="container-tab-search-item">
-								<label>时间选择</label>
-								<Radio ref="userCheckBox" options={checkBoxOption}/>
+								<label>下拉选择框</label>
+								<Select ref="userSelect3" domId="searchSelect" optionArr={options}/>
 							</div>
 						</div>
 						
 						<div className="container-tab-search-submit">
-							<Btn btnClassName="btn btn-user-one" btnTitle="配置" btnCallback={this.submit.bind(this)} />
+							<Btn btnClassName="btn btn-user-one" btnTitle="搜索" btnCallback={this.submit.bind(this)} />
 						</div>
 					</div>
 					<div className="search-result">
@@ -303,4 +258,4 @@ class Edit extends Component {
 	}
 }
 
-export default Edit;
+export default Area;

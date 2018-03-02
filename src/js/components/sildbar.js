@@ -48,12 +48,12 @@ class Sildbar extends Component {
 												{
 													item.sildBarChilder.map((i, d)=>{
 													if(i.secondId==this.state.secondId){
-														return <Link className="sildbar-container-second-item" onClick={this.changeSecondKey.bind(this)} key={d} to={"/admin/"+i.secondId}>
+														return <Link className="sildbar-container-second-item" onClick={this.changeSecondKey.bind(this)} key={d} to={"/admin/"+i.secondName}>
 															<div  data-key={i.secondId} className="sildbar-container-second-item sildbar-container-second-this">
 															{i.secondSildBarName}</div>
 															</Link>
 													}else {
-														return <Link className="sildbar-container-second-item" onClick={this.changeSecondKey.bind(this)} key={d} to={"/admin/"+i.secondId}>
+														return <Link className="sildbar-container-second-item" onClick={this.changeSecondKey.bind(this)} key={d} to={"/admin/"+i.secondName}>
 																<div  data-key={i.secondId} className="sildbar-container-second-item">
 																{i.secondSildBarName}</div>
 															</Link>

@@ -1,4 +1,5 @@
 @import url(../../public/static/reset.css);
+@import url(../../public/static/libs/bootstrap-datetimepicker.min.css);
 /* @import url(../../public/static/mediaQuery.css); */
 /* @import url(../../public/static/colorPicker/colorPicker.css); */
 /*@import url(./../../../common/src/lib/colorPicker/colorPicker.css);*/
@@ -192,7 +193,7 @@
  * container
  */
 
-.container {
+.user-container {
 	width: auto;
     position: absolute;
     top: 50px;
@@ -400,4 +401,125 @@ table tr td:nth-child(1){
 }
 .footer-container span {
 	padding: 0 5px;
+}
+.datetimepicker  table tr th:nth-child(1){
+	padding-left: 0px;
+}
+.datetimepicker table tr td:nth-child(1){
+	padding-left: 0px;
+}
+
+/**
+ * main
+ */
+
+
+.danger-tips {
+	margin-left: 12px;
+	padding-left: 20px;
+}
+.danger-tips-title {
+	font-size: 16px;
+	padding-bottom: 20px;
+}
+.danger-tips-title-txt {
+	font-size: 12px;
+	padding-bottom: 20px;
+}
+
+/**
+ * netConfig
+ */
+
+.netConfig-container {
+	width: 100%;
+	margin-left: 12px;
+	padding-left: 20px;
+	background: #fff;
+	font-size: 14px;
+	height: auto;
+	margin-bottom: 20px;
+}
+.index-netConfig .all-btn{
+	margin-left: 48%;
+
+}
+.net-name {
+	display: block;
+	width: 100%;
+	height: 70px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+.net-name span {
+	display: block;
+	float: left;
+	line-height: 34px;
+}
+.net-name span:nth-of-type(2) {
+	color: #999;
+}
+.net-name .input-user-text {
+	display: block;
+	float: left;
+	line-height: 34px;
+	padding:0 20px;
+}
+
+.application-name {
+	display: block;
+	width: 100%;
+	height: 50px;
+	padding-top: 0px;
+	padding-bottom: 10px;
+}
+.application-name span {
+	display: block;
+	float: left;
+	line-height: 34px;
+}
+.application-name span:nth-of-type(2) {
+	color: #999;
+}
+.application-name .input-user-text {
+	display: block;
+	float: left;
+	line-height: 34px;
+	padding:0 20px;
+}
+.copyright-name {
+	display: block;
+	width: 100%;
+	height: 50px;
+	padding-top: 0px;
+	padding-bottom: 20px;
+}
+.copyright-name span {
+	display: block;
+	float: left;
+	line-height: 34px;
+}
+.copyright-name span:nth-of-type(2) {
+	color: #999;
+}
+.copyright-name .input-user-text {
+	display: block;
+	float: left;
+	line-height: 34px;
+	padding:0 20px;
+}
+
+/**
+ * area 
+ */
+
+.index-area-tab {
+	height: auto;
+}
+.index-area-tab .container-tab-search {
+	padding-bottom: 15px;
+}
+.index-area-tab .container-tab-search-submit {
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
