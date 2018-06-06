@@ -8,7 +8,7 @@ import Store from './reducers/Reducers';
 import thunkMiddleware from 'redux-thunk'
 import {createLogger} from 'redux-logger'
 //import Home from './Home';
-import Loading from './components/Loading';
+import Loading from './components/loading';
 import Admin from './components/admin';
 
 
