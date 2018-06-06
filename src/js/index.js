@@ -4,7 +4,7 @@ import { createStore, applyMiddleware } from 'redux';
 import Loadable from 'react-loadable';
 import { Provider } from 'react-redux'
 import '../css/style.css';
-import Store from './reducers/reducers';
+import Store from './reducers/Reducers';
 import thunkMiddleware from 'redux-thunk'
 import {createLogger} from 'redux-logger'
 //import Home from './Home';
